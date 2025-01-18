@@ -14,12 +14,13 @@ be able to use it for exploratory data analysis
 or advanced data analysis.
 
 Methodology:
+
 I achieved a clean dataset using SQL by:
 
 1.Creating a new table(staging table) identical to the layoffs dataset 
 since we can not perform data cleaning on the original table as it not best practice.
 
-I then created a column with row numbers since there was no columns with unique idenfiers for each row in the dataset.
+I then created a column with row numbers since there   was no column with unique idenfiers for each row in the dataset because without unique identifiers identifying duplicates would be quite challenging.
 
 2.Removing duplicates on the staging table.
 
