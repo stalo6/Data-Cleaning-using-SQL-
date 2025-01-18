@@ -17,7 +17,7 @@ Methodology:
 
 I achieved a clean dataset using SQL by:
 
-1.Creating a new table(staging table) identical to the layoffs dataset 
+1.Creating a new tableb (staging table) identical to the layoffs dataset 
 since we can not perform data cleaning on the original table as it not best practice.
 
 I then created a column with row numbers since there   was no column with unique idenfiers for each row in the dataset because without unique identifiers identifying duplicates would be quite challenging.
