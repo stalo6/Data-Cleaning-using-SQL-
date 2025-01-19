@@ -1,31 +1,32 @@
-DATA CLEANING USING SQL 
+Data Cleaning Using SQL
+Introduction
+Data cleaning might be the least glamorous part of any data professional’s work, but it’s the backbone of quality analysis! Determined to challenge myself, I embarked on a data cleaning project using a dataset called "Layoffs". It was a tiresome journey, but I made it through—alive and with a clean dataset! 😂😭
 
-Data Cleaning is like the most boring part of being an 
-individual in any data related field.
-I decided to get out of my comfort zone and put myself in 
-the frying pan and did a data cleaning project on a dataset called layoffs 😂😭.
-It was tiresome but thank God I'm still alive.
+Objective
+To import the Layoffs dataset into a MySQL server, clean it, and prepare it for exploratory or advanced data analysis.
 
-Objective:
+Methodology
+Using SQL, I systematically transformed the raw dataset into a clean, ready-to-analyze version by:
 
-The goal is to import the layoffs dataset to
-MySQL server and clean the dataset so that we can 
-be able to use it for exploratory data analysis 
-or advanced data analysis.
+1️⃣ Creating a staging table:
 
-Methodology:
+Copied the structure of the original dataset into a new staging table.
+Ensured the original dataset remained untouched, adhering to best practices.
+2️⃣ Adding unique identifiers:
 
-I achieved a clean dataset using SQL by:
+Created a column with row numbers since the dataset lacked unique identifiers.
+This was essential for identifying and managing duplicate records.
+3️⃣ Removing duplicates:
 
-1.Creating a new table (staging table) identical to the layoffs dataset 
-since we can not perform data cleaning on the original table as it not best practice.
+Identified and deleted duplicate rows in the staging table.
+4️⃣ Standardizing data:
 
-I then created a column with row numbers since there   was no column with unique idenfiers for each row in the dataset because without unique identifiers identifying duplicates would be quite challenging.
+Ensured consistency across the dataset, such as formatting dates and normalizing text.
+5️⃣ Handling missing values:
 
-2.Removing duplicates on the staging table.
+Replaced null or blank values with appropriate placeholders or removed incomplete rows where necessary.
+6️⃣ Removing irrelevant columns:
 
-3.Standardizing the data.
+Dropped unnecessary fields that added no value to the analysis.
+This project was a great reminder of the importance of clean data in analytics and how SQL can be a powerful tool for the job. If you're interested in the details, check out the code and dataset transformations in the repository! 🚀
 
-3.Dealing with null or blank values.
-
-4.Removing any columns that are irrelevant.
