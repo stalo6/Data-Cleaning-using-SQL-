@@ -31,7 +31,7 @@ FROM layoffs_staging;
 
 SELECT * ,
 ROW_NUMBER() OVER(
-PARTITION BY company,industry,total_laid_off,percentage_laid_off,'date') AS row_num
+PARTITION BY company,industry,total_laid_off,percentage_laid_off,`date`) AS row_num
 FROM layoffs_staging;
 
 # if the row number is greater than 1 it means there are duplicates
@@ -40,7 +40,7 @@ WITH duplicate_cte AS
 (
 	SELECT * ,
 	ROW_NUMBER() OVER(
-	PARTITION BY company,location,industry,total_laid_off,percentage_laid_off,'date',stage,
+	PARTITION BY company,location,industry,total_laid_off,percentage_laid_off,`date`,stage,
     country,funds_raised_millions) AS row_num
 	FROM layoffs_staging
 )
@@ -72,7 +72,7 @@ INSERT INTO layoffs_staging2
 
 SELECT * ,
 	ROW_NUMBER() OVER(
-	PARTITION BY company,location,industry,total_laid_off,percentage_laid_off,'date',stage,
+	PARTITION BY company,location,industry,total_laid_off,percentage_laid_off,`date`,stage,
     country,funds_raised_millions) AS row_num
 	FROM layoffs_staging;
     
