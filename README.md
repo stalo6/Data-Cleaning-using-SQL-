@@ -2,7 +2,7 @@ Data Cleaning Using SQL
 
 Introduction
 
-Data cleaning might be the least glamorous part of any data professional’s work, but it’s the backbone of quality analysis! Determined to challenge myself, I embarked on a data cleaning project using a dataset called "Layoffs". It was a tiresome journey, but I made it through—alive and with a clean dataset! 😂😭
+Data cleaning might be the least glamorous part of any data professional’s work, but it’s the backbone of quality analysis! Determined to challenge myself, I embarked on a data cleaning project using a dataset called "Layoffs". It was a tiresome journey, but I made it through—alive and with a clean dataset! 
 
 
 Objective
