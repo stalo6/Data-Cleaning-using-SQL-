@@ -1,43 +1,43 @@
-Data Cleaning Using SQL
+# Data Cleaning Using SQL
 
-Introduction
+## Introduction
 
 Data cleaning might be the least glamorous part of any data professional’s work, but it’s the backbone of quality analysis! Determined to challenge myself, I embarked on a data cleaning project using a dataset called "Layoffs". It was a tiresome journey, but I made it through—alive and with a clean dataset! 
 
 
-Objective
+## Objective
 
 To import the Layoffs dataset into a MySQL server, clean it, and prepare it for exploratory or advanced data analysis.
 
 
-Methodology
+## Methodology
 
 Using SQL, I systematically transformed the raw dataset into a clean, ready-to-analyze version by:
 
 
-1️⃣ Creating a staging table:
+1. Creating a staging table:
 
 Copied the structure of the original dataset into a new staging table.
 Ensured the original dataset remained untouched, adhering to best practices.
 
-2️⃣ Adding unique identifiers:
+2. Adding unique identifiers:
 
 Created a column with row numbers since the dataset lacked unique identifiers.
 This was essential for identifying and managing duplicate records.
 
-3️⃣ Removing duplicates:
+3. Removing duplicates:
 
 Identified and deleted duplicate rows in the staging table.
 
-4️⃣ Standardizing data:
+4. Standardizing data:
 
 Ensured consistency across the dataset, such as formatting dates and normalizing text.
 
-5️⃣ Handling missing values:
+5. Handling missing values:
 
 Replaced null or blank values with appropriate placeholders or removed incomplete rows where necessary.
 
-6️⃣ Removing irrelevant columns:
+6. Removing irrelevant columns:
 
 Dropped unnecessary fields that added no value to the analysis.
 
