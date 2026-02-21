@@ -41,5 +41,5 @@ Replaced null or blank values with appropriate placeholders or removed incomplet
 
 Dropped unnecessary fields that added no value to the analysis.
 
-This project was a great reminder of the importance of clean data in analytics and how SQL can be a powerful tool for the job. If you're interested in the details, check out the code and dataset transformations in the repository! 🚀
+This project was a great reminder of the importance of clean data in analytics and how SQL can be a powerful tool for the job. If you're interested in the details, check out the code and dataset transformations in the repository!
 
